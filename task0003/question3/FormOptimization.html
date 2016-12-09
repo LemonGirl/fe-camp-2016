@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单优化</title>
+    <style>
+        input[type=text],[type=email],[type=url],[type=password],[type=tel]{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>志愿者注册</h1>
+        <i>原表单链接：<a target="_blank" href="http://www.jxzyz.cn/user/grzc.php">http://www.jxzyz.cn/user/grzc.php</a></i>
+    </center>
+    <hr/>
+    <strong>注意：&lowast;为必填项！</strong>
+    <hr/>
+    <form action="http://www.jxzyz.cn/user/grzc.php" method="post">
+        <fieldset>
+            <legend><h2>&diams;账号信息</h2></legend>
+            <p>
+                证件类型：
+                <select name="IDType">
+                    <option>CID-中国身份证</option>
+                </select>
+                <span>&lowast;</span>
+            </p>
+            <p>
+                证件号码：
+                <input type="text" placeholder="请填写有效的证件号" required/>
+                <span>&lowast;</span>
+            </p>
+            <p>
+                登录名：
+                <input type="text" placeholder="请使用英文字母、数字作为账号" required/>
+                <span>&lowast;</span>
+                <button type="button">点击检测帐号</button>
+            </p>
+            <p>
+                密码：
+                <input type="password" placeholder="6-20个字符，字母区分大小写，可用字母、数字、特殊字符组合" required minlength="6" maxlength="20"/>
+                <span>&lowast;</span>
+            </p>
+            <p>
+                再次输入密码：
+                <input type="password" required />
+                <span>&lowast;</span>
+            </p>
+            <p>
+                电子邮箱：
+                <input type="email" placeholder="此邮箱用于接收信息或找回密码" required/>
+                <span>&lowast;</span>
+            </p>
+            <p>
+                手机号：
+                <input type="tel" placeholder="参与服务的相关信息将发送到此号码" required/>
+                <span>&lowast;</span>
+            </p>
+            <p>
+                博客地址：
+                <input type="url" placeholder="请填写您的博客地址"/>
+            </p>
+            <p>
+                微博地址：
+                <input type="url" placeholder="请填写您的微博地址"/>
+            </p>
+            <p>
+                归口单位：
+                <select>
+                    <option>请选择总队名称</option>
+                    <option>社区服务总队</option>
+                    <option>红十字会志愿服务总队</option>
+                    <option>青年志愿服务总队</option>
+                </select>
+                <select>
+                    <option>请选择支队名称</option>
+                    <option>南昌市青年志愿服务支队</option>
+                    <option>上饶市青年志愿服务支队</option>
+                    <option>九江市青年志愿服务支队</option>
+                </select>
+                <select>
+                    <option>请选择大队名称</option>
+                    <option>庐山区青年志愿服务大队</option>
+                    <option>九江县青年志愿服务大队</option>
+                    <option>八里湖新区青年志愿服务大队</option>
+                </select>
+                <select>
+                    <option>请选择单位名称</option>
+                    <option>385-九江县港口中心小学</option>
+                    <option>535-九江县一中青年志愿服务队</option>
+                    <option>2137-九江县二中</option>
+                </select>
+                <span>&lowast;</span>
+            </p>
+            <p>
+                <i>注：您注册信息将由归口单位负责审批 【如您在此架构中无法找到您的归口单位，请选择“江西省学雷锋志愿服务总队”作为临时代管单位，待您的单位开通系统账号后再做归口单位调整】</i>
+            </p>
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend><h2>&diams;设置保密问题</h2></legend>
+            <p>
+                问题一：
+                <select>
+                    <option>请选择保密问题</option>
+                    <option>你父亲的姓名？</option>
+                    <option>你母亲的姓名？</option>
+                    <option>你配偶的姓名？</option>
+                </select>
+                <span>&lowast;</span>
+                <br/>
+                <br/>
+                答案：
+                <input type="text" placeholder="请不要使用特殊字符" required/>
+            </p>
+            <p>
+                问题二：
+                <select>
+                    <option>请选择保密问题</option>
+                    <option>你父亲的姓名？</option>
+                    <option>你母亲的姓名？</option>
+                    <option>你配偶的姓名？</option>
+                </select>
+                <span>&lowast;</span>
+                <br/>
+                <br/>
+                答案：
+                <input type="text" placeholder="请不要使用特殊字符" required/>
+            </p>
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend><h2>&diams;基本信息</h2></legend>
+            <p>
+                真实姓名：
+                <input type="text" placeholder="请填写申请时所用身份证上的姓名" required maxlength="25"/>
+                <span>&lowast;</span>
+            </p>
+            <p>
+                英文姓名：
+                <input type="text" placeholder="请用大写字母填写并与身份证保持一致，中国用户请用拼音填写此项" maxlength="25"/>
+            </p>
+            <p>
+                英文姓：
+                <input type="text" placeholder="请用大写字母填写并与身份证保持一致，中国用户请用拼音填写此项" maxlength="25"/>
+            </p>
+            <p>
+                英文名：
+                <input type="text" placeholder="请用大写字母填写并与身份证保持一致，中国用户请用拼音填写此项" maxlength="25"/>
+            </p>
+            <p>
+                性别：
+                <input type="radio" name="sex" value="0" /><span>男</span>
+                <input type="radio" name="sex" value="1" /><span>女</span>
+                <span>&lowast;</span>
+            </p>
+            <p>
+                出生日期：
+                <input type="date" />
+            </p>
+            <p>
+                出生国家/地区：
+                <select name="BirthArea">
+                    <option value="0" selected>中国</option>
+                    <option value="1">中华台北</option>
+                    <option value="2">爱尔兰</option>
+                </select>
+                <span>&lowast;</span>
+            </p>
+            <p>
+                证件所属国家/地区：
+                <select name="IDArea">
+                    <option value="0" selected>中国</option>
+                    <option value="1">中华台北</option>
+                    <option value="2">爱尔兰</option>
+                </select>
+            </p>
+            <p>
+                政治面貌：
+                <select name="PoliticalStatus">
+                    <option>中国党员</option>
+                    <option>民主党派</option>
+                    <option>共青团员</option>
+                    <option>群众</option>
+                    <option>其他</option>
+                </select>
+                <span>&lowast;</span>
+            </p>
+            <p>
+                民族：
+                <select>
+                    <option>汉族</option>
+                    <option>白族</option>
+                    <option>回族</option>
+                    <option>维吾尔族</option>
+                </select>
+                <span>&lowast;</span>
+            </p>
+            <p>
+                所在地区：
+                <select>
+                    <option>江西省</option>
+                </select>
+                <select>
+                    <option>请选择</option>
+                    <option>九江市</option>
+                    <option>南昌市</option>
+                    <option>景德镇市</option>
+                </select>
+                <select>
+                    <option>请选择</option>
+                    <option>九江县</option>
+                    <option>浔阳区</option>
+                    <option>共青城市</option>
+                </select>
+                <span>&lowast;</span>
+            </p>
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend><h2>&diams;服务意向</h2></legend>
+            <p>
+                可服务时间：
+                <label><input type="checkbox" name="AvailableDay" />星期一</label>
+                <label><input type="checkbox" name="AvailableDay" />星期二</label>
+                <label><input type="checkbox" name="AvailableDay" />星期三</label>
+                <label><input type="checkbox" name="AvailableDay" />星期四</label>
+                <label><input type="checkbox" name="AvailableDay" />星期五</label>
+                <label><input type="checkbox" name="AvailableDay" />星期六</label>
+                <label><input type="checkbox" name="AvailableDay" />星期日</label>
+                <span>&lowast;</span>
+            </p>
+            <p>
+                可服务时段：
+                <label><input type="checkbox" name="AvailableTime" />早上</label>
+                <label><input type="checkbox" name="AvailableTime" />下午</label>
+                <label><input type="checkbox" name="AvailableTime" />晚上</label>
+                <span>&lowast;</span>
+            </p>
+            <p>
+                服务对象：
+                <label><input type="checkbox" name="TargetPeople" />青少年</label>
+                <label><input type="checkbox" name="TargetPeople" />婴幼儿</label>
+                <label><input type="checkbox" name="TargetPeople" />孤寡老人</label>
+                <label><input type="checkbox" name="TargetPeople" />残障人士</label>
+                <label><input type="checkbox" name="TargetPeople" />优抚对象</label>
+                <label><input type="checkbox" name="TargetPeople" />特困群体</label>
+                <label><input type="checkbox" name="TargetPeople" />其他</label>
+                <span>&lowast;</span>
+            </p>
+            <p>
+                服务区域：
+                <label><input type="checkbox" name="TargetArea" />南昌市</label>
+                <label><input type="checkbox" name="TargetArea" />九江市</label>
+                <label><input type="checkbox" name="TargetArea" />赣州市</label>
+                <label><input type="checkbox" name="TargetArea" />宜春市</label>
+                <label><input type="checkbox" name="TargetArea" />新余市</label>
+                <label><input type="checkbox" name="TargetArea" />吉安市</label>
+                <label><input type="checkbox" name="TargetArea" />鹰潭市</label>
+                <label><input type="checkbox" name="TargetArea" />上饶市</label>
+                <label><input type="checkbox" name="TargetArea" />景德镇市</label>
+                <label><input type="checkbox" name="TargetArea" />萍乡市</label>
+                <label><input type="checkbox" name="TargetArea" />抚州市</label>
+                <span>&lowast;</span>
+            </p>
+            <p>
+                服务类别：
+                <label><input type="checkbox" name="ServiceType" />法律咨询</label>
+                <label><input type="checkbox" name="ServiceType" />维权服务</label>
+                <label><input type="checkbox" name="ServiceType" />心理健康</label>
+                <label><input type="checkbox" name="ServiceType" />敬老助老</label>
+                <label><input type="checkbox" name="ServiceType" />文化娱乐</label>
+                <label><input type="checkbox" name="ServiceType" />全民健身</label>
+                <label><input type="checkbox" name="ServiceType" />治安巡逻</label>
+                <label><input type="checkbox" name="ServiceType" />环保绿化</label>
+                <label><input type="checkbox" name="ServiceType" />卫生保洁</label>
+                <label><input type="checkbox" name="ServiceType" />教育培训</label>
+                <label><input type="checkbox" name="ServiceType" />纠纷调解</label>
+                <label><input type="checkbox" name="ServiceType" />消防安全</label>
+                <label><input type="checkbox" name="ServiceType" />扶贫济困</label>
+                <label><input type="checkbox" name="ServiceType" />科技创新</label>
+                <label><input type="checkbox" name="ServiceType" />电器维修</label>
+                <label><input type="checkbox" name="ServiceType" />医疗保健</label>
+                <label><input type="checkbox" name="ServiceType" />其它</label>
+                <span>&lowast;</span>
+            </p>
+            <p>
+                专业特长：
+                <label><input type="checkbox" name="specialties" />英语</label>
+                <label><input type="checkbox" name="specialties" />书法</label>
+                <label><input type="checkbox" name="specialties" />绘画</label>
+                <label><input type="checkbox" name="specialties" />摄影</label>
+                <label><input type="checkbox" name="specialties" />电脑维修</label>
+                <label><input type="checkbox" name="specialties" />文化辅导</label>
+                <label><input type="checkbox" name="specialties" />编辑写作</label>
+                <label><input type="checkbox" name="specialties" />话剧演讲</label>
+                <label><input type="checkbox" name="specialties" />节目主持</label>
+                <label><input type="checkbox" name="specialties" />电脑编程</label>
+                <label><input type="checkbox" name="specialties" />漫画</label>
+                <label><input type="checkbox" name="specialties" />唱歌</label>
+                <label><input type="checkbox" name="specialties" />舞蹈</label>
+                <label><input type="checkbox" name="specialties" />钢琴</label>
+                <label><input type="checkbox" name="specialties" />推拿按摩</label>
+                <label><input type="checkbox" name="specialties" />创意策划</label>
+                <label><input type="checkbox" name="specialties" />处理应变</label>
+                <label><input type="checkbox" name="specialties" />社交外联</label>
+                <label><input type="checkbox" name="specialties" />人事管理</label>
+                <label><input type="checkbox" name="specialties" />平面设计</label>
+                <label><input type="checkbox" name="specialties" />吉他</label>
+                <label><input type="checkbox" name="specialties" />护理</label>
+                <label><input type="checkbox" name="specialties" />网页制作</label>
+                <label><input type="checkbox" name="specialties" />手工制作</label>
+                <label><input type="checkbox" name="specialties" />其他</label>
+                <span>&lowast;</span>
+            </p>
+        </fieldset>
+        <br/>
+        <center>
+            <p>
+                <label><input type="checkbox" name="isAgree"/>我已经看过并同意《服务协议》</label>
+            </p>
+            <button type="submit">提交审批</button>
+            <button type="reset">重置</button>
+        </center>
+    </form>
+</body>
+</html>
