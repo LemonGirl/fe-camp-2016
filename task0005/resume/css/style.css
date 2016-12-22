@@ -5,36 +5,23 @@
     text-decoration: none;
 }
 .mainBox{
-    width: 900px;
     min-height: 900px;
-    margin: 20px auto;
-    background: url("../images/resume-background.jpg") repeat;
     position: relative;
-    box-shadow: 5px 3px 8px #ccc;
+    background: url("../images/resume-background.jpg") repeat;
 }
-.leftBox{
-    width: 280px;
-    height: 100%;
-    position: absolute;
+.leftBox,.bottomBox{
     color: #eeeeee;
     background-color: #074a74;
 }
 .leftBox .avatar{
     display: block;
-    width: 180px;
-    height: 180px;
     border: 3px solid #07365c;
-    border-radius: 90px;
-    margin: 45px auto 0;
 }
 .leftBox article h1{
-    margin-top: 30px;
-    font-size: 2.2em;
     text-align: center;
 }
-.leftBox article hr{
+.leftBox article hr,.bottomBox article hr{
     margin: 28px auto 15px;
-    width: 82%;
     border-top: 3px double #eeeeee;
     border-right: 0px solid transparent;
     border-bottom: 8px solid transparent;
@@ -46,7 +33,6 @@
     width: 20px;
     height: 20px;
     margin-right: 10px;
-    margin-left: 45px;
     background-size: cover;
 }
 .leftBox article section.generalInfo .icon-add{
@@ -66,9 +52,6 @@
 }
 .leftBox article section.generalInfo .icon-github{
     background: url("../images/icon-github.png") no-repeat;
-}
-.leftBox article section p{
-    padding: 5px 0 12px;
 }
 .leftBox article section.generalInfo p span{
     vertical-align: 5%;
@@ -114,7 +97,6 @@
 .leftBox article section.skills p i.skill-6{
     border-left: 60px solid #eeeeee;
 }
-
 .leftBox article section.hobbies i.icon-hobbies{
     display: block;
     width: 45px;
@@ -133,8 +115,6 @@
 }
 .rightBox{
     color: #074a74;
-    margin-left: 280px;
-    padding: 40px 30px 20px;
 }
 .rightBox article hr{
     width: 100%;
@@ -145,8 +125,6 @@
 }
 .rightBox article section i[class^=icon-]{
     display: inline-block;
-    width: 60px;
-    height: 60px;
     background-size: cover;
     margin-right: 5px;
 }
@@ -164,35 +142,17 @@
 }
 .rightBox article section h2{
     display: inline-block;
-    font-size: 1.8em;
     vertical-align: 35%;
 }
 .rightBox article section ul{
-    padding-left: 30px;
     padding-top: 5px;
     list-style: circle;
 }
 .rightBox article section ul li{
     padding-top: 8px;
 }
-.rightBox article section.education ul li>span:first-child{
-    display: inline-block;
-    width: 9.5em;
-}
-.rightBox article section.work ul li>span{
-    font-weight: bold;
-}
-.rightBox article section.work ul li>span:first-child{
-    display: inline-block;
-    width: 9.5em;
-}
 .rightBox article section.work ul li p{
     padding-top: 4px;
-}
-.rightBox article section.work ul li p span:first-child{
-    width: 5.5em;
-    float: left;
-    line-height: 1.5em;
 }
 .rightBox article section.work ul li p span:last-child{
     display: block;
@@ -202,4 +162,426 @@
 .rightBox article section.award ul li span:first-child{
     display: inline-block;
     width: 4em;
+}
+
+/*@media screen and (min-width: 901px){*/
+    /*.mainBox{*/
+        /*width: 900px;*/
+        /*margin: 20px auto;*/
+        /*box-shadow: 5px 3px 8px #ccc;*/
+    /*}*/
+    /*.leftBox{*/
+        /*width: 280px;*/
+        /*height: 100%;*/
+        /*position: absolute;*/
+    /*}*/
+    /*.leftBox .avatar{*/
+        /*width: 180px;*/
+        /*height: 180px;*/
+        /*border-radius: 90px;*/
+        /*margin: 45px auto 0;*/
+    /*}*/
+    /*.leftBox article h1{*/
+        /*margin-top: 30px;*/
+        /*font-size: 2.2em;*/
+    /*}*/
+    /*.leftBox article hr{*/
+        /*width: 82%;*/
+    /*}*/
+    /*.leftBox article section.generalInfo i[class^=icon-]{*/
+        /*margin-left: 45px;*/
+    /*}*/
+    /*.leftBox article section p{*/
+        /*padding: 5px 0 12px;*/
+    /*}*/
+    /*.rightBox{*/
+        /*margin-left: 280px;*/
+        /*padding: 40px 30px 20px;*/
+    /*}*/
+    /*.rightBox article section i[class^=icon-]{*/
+        /*width: 60px;*/
+        /*height: 60px;*/
+    /*}*/
+    /*.rightBox article section h2{*/
+        /*font-size: 1.8em;*/
+    /*}*/
+    /*.rightBox article section ul{*/
+        /*padding-left: 30px;*/
+    /*}*/
+    /*.rightBox article section.education ul li>span:first-child{*/
+        /*display: inline-block;*/
+        /*width: 9.5em;*/
+    /*}*/
+    /*.rightBox article section.work ul li>span{*/
+        /*font-weight: bold;*/
+    /*}*/
+    /*.rightBox article section.work ul li>span:first-child{*/
+        /*display: inline-block;*/
+        /*width: 9.5em;*/
+    /*}*/
+    /*.rightBox article section.work ul li p span:first-child{*/
+        /*width: 5.5em;*/
+        /*float: left;*/
+        /*line-height: 1.5em;*/
+    /*}*/
+    /*.bottomBox{*/
+        /*display: none;*/
+    /*}*/
+/*}*/
+/*@media screen and (max-width: 900px){*/
+    /*html{*/
+        /*font-size: 14px;*/
+    /*}*/
+    /*.mainBox{*/
+        /*width: 100%;*/
+        /*box-sizing: border-box;*/
+        /*padding: 5px;*/
+        /*box-shadow: none;*/
+    /*}*/
+    /*.leftBox,.bottomBox{*/
+        /*box-sizing: border-box;*/
+        /*width: 100%;*/
+        /*padding: 10px 5px;*/
+    /*}*/
+    /*.leftBox .avatar{*/
+        /*width: 65%;*/
+        /*height: 65%;*/
+        /*max-width: 180px;*/
+        /*max-height: 180px;*/
+        /*border-radius: 50%;*/
+        /*margin: 0 auto;*/
+    /*}*/
+    /*.leftBox article h1{*/
+        /*margin-top: 20px;*/
+        /*font-size: 2em;*/
+    /*}*/
+    /*.leftBox article hr,.bottomBox article hr{*/
+        /*width: 80%;*/
+    /*}*/
+    /*.leftBox article section.generalInfo p,.bottomBox article section.skills p,.bottomBox article section.hobbies p{*/
+        /*width: 180px;*/
+        /*margin: 0 auto;*/
+        /*padding: 5px 0 12px;*/
+    /*}*/
+    /*.leftBox article section.generalInfo~*{*/
+        /*display: none;*/
+    /*}*/
+    /*.rightBox{*/
+        /*box-sizing: border-box;*/
+        /*width: 100%;*/
+        /*padding: 5% 3%;*/
+        /*box-shadow: 0px 1px 7px inset;*/
+    /*}*/
+    /*.rightBox article hr:last-child{*/
+        /*display: none;*/
+    /*}*/
+    /*.rightBox article section i[class^=icon-]{*/
+        /*width: 40px;*/
+        /*height: 40px;*/
+    /*}*/
+    /*.rightBox article section h2{*/
+        /*font-size: 1.5em;*/
+    /*}*/
+    /*.rightBox article section ul{*/
+        /*padding-left: 10px;*/
+    /*}*/
+    /*.rightBox article section ul span{*/
+        /*display: block;*/
+        /*line-height: 1.8em;*/
+    /*}*/
+    /*.rightBox article section ul li>span:first-child{*/
+        /*display: inline-block;*/
+        /*font-weight: bold;*/
+    /*}*/
+    /*.rightBox article section.work ul li p span:first-child{*/
+        /*font-weight: bold;*/
+    /*}*/
+    /*.rightBox article section.work ul li p span{*/
+        /*display: block;*/
+        /*line-height: 1.5em;*/
+    /*}*/
+    /*.bottomBox article section.skills i.icon-skills{*/
+        /*display: block;*/
+        /*width: 45px;*/
+        /*height: 45px;*/
+        /*margin: 25px auto 8px;*/
+        /*background: url("../images/icon-skills.png");*/
+        /*background-size: cover;*/
+    /*}*/
+    /*.bottomBox article section.skills h2{*/
+        /*text-align: center;*/
+        /*font-size: 1.5em;*/
+        /*margin-bottom: 25px;*/
+    /*}*/
+    /*.bottomBox article section.skills p{*/
+        /*text-align: right;*/
+        /*width: 210px;*/
+    /*}*/
+    /*.bottomBox article section.skills p i[class^=skill-]{*/
+        /*display: inline-block;*/
+        /*width: 100px;*/
+        /*height: 8px;*/
+        /*border-top: 1px solid #eeeeee;*/
+        /*border-right: 1px solid #eeeeee;*/
+        /*border-bottom: 1px solid #eeeeee;*/
+        /*border-radius: 5px;*/
+        /*float: right;*/
+        /*margin: 6px 0 0 15px;*/
+        /*box-sizing: border-box;*/
+    /*}*/
+    /*.bottomBox article section.skills p i.skill-9{*/
+        /*border-left: 90px solid #eeeeee;*/
+    /*}*/
+    /*.bottomBox article section.skills p i.skill-8{*/
+        /*border-left: 80px solid #eeeeee;*/
+    /*}*/
+    /*.bottomBox article section.skills p i.skill-7{*/
+        /*border-left: 70px solid #eeeeee;*/
+    /*}*/
+    /*.bottomBox article section.skills p i.skill-6{*/
+        /*border-left: 60px solid #eeeeee;*/
+    /*}*/
+    /*.bottomBox article section.hobbies i.icon-hobbies{*/
+        /*display: block;*/
+        /*width: 45px;*/
+        /*height: 45px;*/
+        /*margin: 20px auto 8px;*/
+        /*background: url("../images/icon-hobbies.png");*/
+        /*background-size: cover;*/
+    /*}*/
+    /*.bottomBox article section.hobbies h2{*/
+        /*text-align: center;*/
+        /*font-size: 1.5em;*/
+        /*margin-bottom: 25px;*/
+    /*}*/
+    /*.bottomBox article section.hobbies p{*/
+        /*text-align: center;*/
+    /*}*/
+/*}*/
+
+@media all and (min-width: 921px){
+    .mainBox{
+        width: 900px;
+        margin: 20px auto;
+        box-shadow: 5px 3px 8px #ccc;
+    }
+    .leftBox{
+        width: 280px;
+        height: 100%;
+        position: absolute;
+    }
+    .leftBox .avatar{
+        width: 180px;
+        height: 180px;
+        border-radius: 90px;
+        margin: 45px auto 0;
+    }
+    .leftBox article h1{
+        margin-top: 30px;
+        font-size: 2.2em;
+    }
+    .leftBox article hr{
+        width: 82%;
+    }
+    .leftBox article section.generalInfo i[class^=icon-]{
+        margin-left: 45px;
+    }
+    .leftBox article section p{
+        padding: 5px 0 12px;
+    }
+    .rightBox{
+        margin-left: 280px;
+        padding: 40px 30px 20px;
+    }
+    .rightBox article section i[class^=icon-]{
+        width: 60px;
+        height: 60px;
+    }
+    .rightBox article section h2{
+        font-size: 1.8em;
+    }
+    .rightBox article section ul{
+        padding-left: 30px;
+    }
+    .rightBox article section.education ul li>span:first-child{
+        display: inline-block;
+        width: 9.5em;
+    }
+    .rightBox article section.work ul li>span{
+        font-weight: bold;
+    }
+    .rightBox article section.work ul li>span:first-child{
+        display: inline-block;
+        width: 9.5em;
+    }
+    .rightBox article section.work ul li p span:first-child{
+        width: 5.5em;
+        float: left;
+        line-height: 1.5em;
+    }
+    .bottomBox{
+        display: none;
+    }
+}
+@media all and (max-width: 920px){
+    html{
+        font-size: 14px;
+    }
+    .mainBox{
+        width: 100%;
+        min-width: 250px;
+        overflow: auto;
+        box-sizing: border-box;
+        padding: 5px;
+        box-shadow: none;
+    }
+    .leftBox,.bottomBox{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px 5px;
+    }
+    .leftBox .avatar{
+        width: 65%;
+        height: 65%;
+        max-width: 180px;
+        max-height: 180px;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+    .leftBox article h1{
+        margin-top: 20px;
+        font-size: 2em;
+    }
+    .leftBox article hr,.bottomBox article hr{
+        width: 80%;
+    }
+    .leftBox article section.generalInfo p,.bottomBox article section.skills p,.bottomBox article section.hobbies p{
+        width: 180px;
+        margin: 0 auto;
+        padding: 5px 0 12px;
+    }
+    .leftBox article section.generalInfo~*{
+        display: none;
+    }
+    .rightBox{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 5% 3% 5% 5%;
+        box-shadow: 0px 1px 7px inset;
+    }
+    .rightBox article hr:last-child{
+        display: none;
+    }
+    .bottomBox article section.skills i.icon-skills{
+        display: block;
+        width: 45px;
+        height: 45px;
+        margin: 25px auto 8px;
+        background: url("../images/icon-skills.png");
+        background-size: cover;
+    }
+    .bottomBox article section.skills h2{
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 25px;
+    }
+    .bottomBox article section.skills p{
+        text-align: right;
+        width: 210px;
+    }
+    .bottomBox article section.skills p i[class^=skill-]{
+        display: inline-block;
+        width: 100px;
+        height: 8px;
+        border-top: 1px solid #eeeeee;
+        border-right: 1px solid #eeeeee;
+        border-bottom: 1px solid #eeeeee;
+        border-radius: 5px;
+        float: right;
+        margin: 6px 0 0 15px;
+        box-sizing: border-box;
+    }
+    .bottomBox article section.skills p i.skill-9{
+        border-left: 90px solid #eeeeee;
+    }
+    .bottomBox article section.skills p i.skill-8{
+        border-left: 80px solid #eeeeee;
+    }
+    .bottomBox article section.skills p i.skill-7{
+        border-left: 70px solid #eeeeee;
+    }
+    .bottomBox article section.skills p i.skill-6{
+        border-left: 60px solid #eeeeee;
+    }
+    .bottomBox article section.hobbies i.icon-hobbies{
+        display: block;
+        width: 45px;
+        height: 45px;
+        margin: 20px auto 8px;
+        background: url("../images/icon-hobbies.png");
+        background-size: cover;
+    }
+    .bottomBox article section.hobbies h2{
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 25px;
+    }
+    .bottomBox article section.hobbies p{
+        text-align: center;
+    }
+}
+@media all and (min-width: 768px){
+    .rightBox article section i[class^=icon-]{
+        width: 60px;
+        height: 60px;
+    }
+    .rightBox article section h2{
+        font-size: 1.8em;
+    }
+    .rightBox article section ul{
+        padding-left: 30px;
+    }
+    .rightBox article section.education ul li>span:first-child{
+        display: inline-block;
+        width: 9.5em;
+    }
+    .rightBox article section.work ul li>span{
+        font-weight: bold;
+    }
+    .rightBox article section.work ul li>span:first-child{
+        display: inline-block;
+        width: 9.5em;
+    }
+    .rightBox article section.work ul li p span:first-child{
+        width: 5.5em;
+        float: left;
+        line-height: 1.5em;
+    }
+}
+@media all and (max-width: 767px){
+    .rightBox article section i[class^=icon-]{
+        width: 40px;
+        height: 40px;
+    }
+    .rightBox article section h2{
+        font-size: 1.5em;
+    }
+    .rightBox article section ul{
+        padding-left: 10px;
+    }
+    .rightBox article section ul span{
+        display: block;
+        line-height: 1.8em;
+    }
+    .rightBox article section ul li>span:first-child{
+        display: inline-block;
+        font-weight: bold;
+    }
+    .rightBox article section.work ul li p span:first-child{
+        font-weight: bold;
+    }
+    .rightBox article section.work ul li p span{
+        display: block;
+        line-height: 1.5em;
+    }
 }
