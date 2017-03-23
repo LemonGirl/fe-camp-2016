@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pull-down menu component</title>
+	<style>
+		a{
+			text-decoration: none;
+			color: #37cc8e;
+		}
+		.menuContent{
+			position: relative;
+		}
+		.menuMain{
+			list-style: none;
+		}
+		.menuMain>li{
+			float: left;
+			padding: 10px 10px 5px 15px;
+			border-top: 10px solid transparent;
+			border-bottom: 1px solid #37cc8e;
+		}
+		.menuMain>li:hover{
+			border-top: 8px solid #37cc8e;
+			border-right: 15px solid transparent;
+			border-left: 15px solid transparent;
+			border-bottom: 8px solid #37cc8e;
+		}
+		.secondMenu{
+			list-style: none;
+			display: none;
+			padding: 0px;
+			border-top: 2px solid #37cc8e;
+		}
+		.secondMenu>li{
+			padding: 5px;
+			font-size: smaller;
+		}
+		.menuMain>li:hover .secondMenu{
+			display: block;
+		}
+		.secondMenu a:hover{
+			color: #079c5e;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="menuContent" id="myPulldownMenu">
+		<ul class="menuMain">
+			<li>
+				<a href="#">首页</a>
+			</li>
+			<li>
+				<a href="#">APP开发平台</a>
+				<ul class="secondMenu">
+					<li>
+                        <a href="#">APP引擎</a>
+                    </li>
+                    <li>
+                        <a href="#">云引擎</a>
+                    </li>
+                    <li>
+                        <a href="#">模块Store</a>
+                    </li>
+                    <li>
+                        <a href="#">新手指南</a>
+                    </li>
+                    <li>
+                        <a href="#">开发工具</a>
+                    </li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">APP定制服务</a>
+				<ul class="secondMenu">
+					<li>
+                        <a href="#">APP定制</a>
+                    </li>
+                    <li>
+                        <a href="#">模块Store</a>
+                    </li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">开发者社区</a>
+				<ul class="secondMenu">
+					<li>
+                        <a href="#">在线社区</a>
+                    </li>
+                    <li>
+                        <a href="#">文档</a>
+                    </li>
+                    <li>
+                        <a href="#">视频教程</a>
+                    </li>
+                    <li>
+                        <a href="#">源码</a>
+                    </li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

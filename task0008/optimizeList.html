@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>optimizeList</title>
+
+    <style>
+        html{
+            font-size: 20px;
+        }
+
+        input,button{
+            font-size: 20px;
+        }
+
+        ul{
+            list-style-type:none;
+        }
+
+        .fadeIn{
+            animation: fadeIn 2s ease 1;
+        }
+        @keyframes fadeIn {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        .fadeOut{
+            animation: fadeOut 2s ease 1;
+        }
+        @keyframes fadeOut {
+            from{
+                opacity: 1;
+            }
+            to{
+                opacity: 0;
+            }
+        }
+
+        ul>li:hover{
+            background: black;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="buttons">
+        <button>insert</button>
+        <button disabled="disabled">delete</button>
+        <button disabled="disabled">update</button>
+        <input id="rowtext" value="new row"/>
+    </div>
+    <form id="form">
+        <ul id="datalist">
+            <li><label><input type="checkbox"/>row 1</label></li>
+            <li><label><input type="checkbox"/>row 2</label></li>
+            <li><label><input type="checkbox"/>row 3</label></li>
+            <li><label><input type="checkbox"/>row 4</label></li>
+            <li><label><input type="checkbox"/>row 5</label></li>
+            <li><label><input type="checkbox"/>row 6</label></li>
+        </ul>
+    </form>
+
+    <script>
+    
+        const [insertBtn, deleteBtn, updateBtn]
+        = Array.from(document.querySelectorAll('#buttons button'));
+
+        const datalist = document.getElementById('datalist');
+        const rowtext = document.getElementById('rowtext');
+
+        let allRows = document.getElementsByTagName('input');
+
+        function getAllCheckedRows(){
+            return Array.from(datalist.querySelectorAll('li input:checked'))
+            .map(el=>el.parentNode.parentNode);
+        }
+
+        function createNewRow(className){
+            var row = document.createElement('li');
+            row.className = className;
+            row.innerHTML = `<label><input type="checkbox"/>${rowtext.value}</label>`;
+
+            return row;
+        }
+
+        for(let i = 0; i<allRows.length; i++){
+            allRows[i].onchange = function(){
+                if(getAllCheckedRows().length>0){
+                    deleteBtn.disabled = "";
+                    updateBtn.disabled = "";
+                }
+                else{
+                    deleteBtn.disabled = "disabled";
+                    updateBtn.disabled = "disabled";
+                }
+            }
+
+        }
+
+        insertBtn.addEventListener('click', evt=>{
+            var checkedRows = getAllCheckedRows();
+            if(checkedRows.length){
+                checkedRows.forEach(row=>
+                    row.insertAdjacentElement('afterend', createNewRow("fadeIn")));
+            }
+            else{
+                datalist.appendChild(createNewRow("fadeIn"));
+            }
+        });
+
+        deleteBtn.addEventListener('click', evt=>{
+            var checkedRows = getAllCheckedRows();
+            if(checkedRows.length){
+                checkedRows.forEach(row=>{
+                    row.className = "fadeOut";
+                    setTimeout(function(){row.remove();},1500);
+                });
+                deleteBtn.disabled = "disabled";
+                updateBtn.disabled = "disabled";
+            }
+        });
+
+        updateBtn.addEventListener('click', evt=>{
+            var checkedRows = getAllCheckedRows();
+            if(checkedRows.length){
+                checkedRows.forEach(row=>row.childNodes[0].childNodes[1].textContent = rowtext.value);
+            }
+        });
+
+    </script>
+
+</body>
+</html>

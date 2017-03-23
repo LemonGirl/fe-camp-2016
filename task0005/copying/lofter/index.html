@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOFTER(乐乎)</title>
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+<body>
+<div class="g-bgfull12">
+    <div class="m-logbg">
+        <img src="images/bg.jpg"/>
+    </div>
+</div>
+<div class="g-bdc">
+    <div class="m-stwrap1">
+        <div class="logo">
+            <h1 class="f1">LOFTER</h1>
+            <h2 class="f2">
+                记录生活
+                <span class="f3">发现同好</span>
+            </h2>
+        </div>
+        <div class="m-region">
+            <div class="m-userlnks f-cb">
+                <a href="#" class="w-regsong titag">
+                    <span class="regtxt">注册</span>
+                    <span class="acttxt">
+                        <b class="sep">&nbsp;</b>
+                        <span>
+                            <b>个性印制</b>
+                            <b>百元礼包</b>
+                        </span>
+                        <em class="w-song"></em>
+                    </span>
+                </a>
+                <a class="login titag crt" href="#">登录</a>
+                <a class="dwdapp titag" href="#">下载APP</a>
+            </div>
+            <div class="m-forms">
+                <div class="m-reg" id="newreg" style="display: none;">
+                    <div class="cont f-cb ztag">
+                        <div class="msg f-cb" style="display:none;">
+                            <span class="chkbox ztag">
+                                <span class="c j-ok ztag">
+                                    <input id="c0" type="checkbox">
+                                </span>
+                                <span>注册后，自动关注：</span>
+                            </span>
+                        </div>
+                        <div class="msg f-cb" id="registyletext" style="display:none;">
+                            <span class="f-fs1">马上注册LOFTER，关注最潮搭配达人</span>
+                        </div>
+                        <div class="contl">
+                            <div id="reg-URS-wrap"></div>
+                            <div class="guidelayer4phonereg" id="guidelayer4phonereg">
+                                <p>使用手机快速完成注册！</p>
+                                <a class="closebtn" id="closebtn4phonereg"></a>
+                                <a class="goonbyemail" id="goonbyemail4phonereg">继续使用邮箱注册</a>
+                            </div>
+                            <form class="ztag" style="display:none;">
+                                <ul class="w-user w-user-1">
+                                    <li class="w0">
+                                        <div class="inpt j-tfocus">
+                                            <label class="ztag">常用邮箱 / 网易邮箱</label>
+                                            <input class="txt" tabindex="101" type="text" style="visibility:hidden;">
+                                            <div>
+                                                <input class="txt" tabindex="101" type="text" autocomplete="off">
+                                                <div class="txtlist j-in" style="visibility:hidden;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="warn" style="display:none;">
+                                            <div class="warnc">
+                                                <span class="icn">&nbsp;</span>
+                                                <span class="ztag">该邮箱不存在，请用常用邮箱注册</span>
+                                            </div>
+                                        </div>
+                                        <div class="warn" style="display:none;">
+                                            <div class="warnc">
+                                                <span class="w-detect w-detect-6">&nbsp;</span>
+                                                <span class="ztag">您正在使用网易邮箱帐号，可直接输入密码开通</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="w0">
+                                        <div class="inpt">
+                                            <label class="ztag">设置密码</label>
+                                            <input class="txt ztag" type="password" tabindex="102" autocomplete="off">
+                                        </div>
+                                        <div class="warn" style="display:none;">
+                                            <div class="warnc">
+                                                <span class="icn">&nbsp;</span>
+                                                <span class="ztag">请输入6-16个字符的密码</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="w0 w4 ztag f-dn">
+                                        <div class="inpt">
+                                            <label class="ztag">验证码</label>
+                                            <input class="txt ztag" type="text" tabindex="103">
+                                            <a class="validt" href="#" hidefocus="true">
+                                                <img class="ztag" width="80" height="32" src="http://www.lofter.com/cap/regcaptcha.jpgx?h=32&amp;w=80">
+                                                <span class="icn"></span>
+                                            </a>
+                                        </div>
+                                        <div class="warn" style="display:none;">
+                                            <div class="warnc">
+                                                <span class="icn">&nbsp;</span>
+                                                <span class="ztag">验证码错误</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="w0 w2">
+                                        <button class="w-btn w-btn-0 ztag" type="submit" tabindex="104">
+                                            <span>注  册</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                        <div class="contr">
+                            <div class="others">
+                                <span class="sepln"></span>
+                                <span class="septxt">或</span>
+                                <ul class="w-user w-user-3" id="otherLogin1">
+                                    <li class="w1 tel">
+                                        <a class="w-btn3 w-btn3-01" href="http://www.lofter.com/phoneAccount/register" target="_blank">手机账号注册</a>
+                                    </li>
+                                    <li class="w1 mail hide">
+                                        <a class="w-btn3 w-btn3-02">网易邮箱注册</a>
+                                    </li>
+                                    <li class="w1 sina">
+                                        <a class="w-btn3" href="#">新浪微博注册</a>
+                                    </li>
+                                    <li class="w1 qq">
+                                        <a class="w-btn3 w-btn3-1" href="#">腾讯QQ注册</a>
+                                    </li>
+                                    <li class="w1 weixin">
+                                        <a class="w-btn3 w-btn3-4" href="#">微信注册</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-login">
+                    <div class="cont f-cb ztag">
+                        <div class="contl">
+                            <div class="login-URS-wrap">
+                                <div class="retrieve-ac">
+                                    <span class="fgt">|</span>
+                                    <a class="fgt" target="_blank" href="#">找回帐号</a>
+                                </div>
+                                <div class="login-URS-iframe">
+                                    <div class="g-bd cnt-box-include">
+                                        <div class="g-bd">
+                                            <div class="m-cnt">
+                                                <form id="login-form">
+                                                    <div class="m-container">
+                                                        <div class="inputbox" id="account-box">
+                                                            <div class="u-input box auto-1482407627002-parent">
+                                                                <input data-placeholder="常用邮箱 / 网易邮箱" name="email" data-type="email" data-required="true" class="j-inputtext dlemail" type="text" autocomplete="off" tabindex="1" spellcheck="false" id="auto-id-1482407627014" placeholder="常用邮箱 / 网易邮箱">
+                                                            </div>
+                                                        </div>
+                                                        <div class="inputbox">
+                                                            <div class="u-input box">
+                                                                <input data-placeholder="密码" name="password" maxlength="16" data-required="true" class="j-inputtext dlpwd" type="password" autocomplete="new-password" data-max-length="20" tabindex="2" spellcheck="false" id="auto-id-1482407627017" placeholder="密码">
+                                                            </div>
+                                                        </div>
+                                                        <div class="ckbox m-ckcnt f-cb" style="display: none">
+                                                            <div class="inputbox ckin">
+                                                                <div class="u-input">
+                                                                    <input data-placeholder="验证码" name="checkcode" class="j-inputtext cktext" type="text" data-required="true" data-max-length="6" maxlength="4" data-pattern="^[0-9a-zA-Z]{4,6}$" tabindex="4" spellcheck="false" id="auto-id-1482407627020" placeholder="验证码">
+                                                                </div>
+                                                            </div>
+                                                            <div class="inputbox ckimgbox f-fr">
+                                                                <img class="ckimg" title="点击刷新验证码" alt="点击获取验证码" onerror="" id="auto-id-1482407627066" src="http://passport.www.lofter.com/dl/cp?pd=lofter&amp;pkid=YlfTAjw&amp;random=1482407626975">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="ckbox m-ckcnt slidebox f-cb" id="auto-id-1482499861238">
+                                                            <div class="ScapTcha" id="ScapTcha">
+                                                                <div class="ncpt_widget" id="NECaptcha" cap_t="2">
+                                                                    <div class="ncpt_contents" id="auto-id-1482499861244">
+                                                                        <div class="ncpt_puzzle_bg">
+                                                                            <div class="ncpt_puzzle_fg">
+                                                                                <img src="https://nisp-captcha.nosdn.127.net/1470910246949_1557620290">
+                                                                            </div>
+                                                                            <div class="ncpt_puzzle_bg">
+                                                                                <img src="https://nisp-captcha.nosdn.127.net/1470910246950_2147155074">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="ncpt_slide_bg" id="auto-id-1482499861242">
+                                                                            <div class="ncpt_slide_fg" id="auto-id-1482499861237">
+                                                                                <img src="https://captcha.reg.163.com/v2/images/slider.png" id="auto-id-1482499861243">
+                                                                            </div>
+                                                                            <div class="ncpt_hint_txt" id="auto-id-1482499861239">
+                                                                                按住滑块，拖动完成上方拼图
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="ncpt_txt_status"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="m-nerror" id="nerror" data-from="null">
+                                                            <div class="ferrortail"></div>
+                                                            <div class="ferrorhead">请滑动验证码</div>
+                                                        </div>
+                                                        <div class="f-cb loginbox">
+                                                            <a id="dologin" data-action="dologin" class="u-loginbtn btncolor tabfocus btndisabled" tabindex="8">登&nbsp;&nbsp;录</a>
+                                                        </div>
+                                                        <div class="m-unlogin">
+                                                            <div class="b-unlogn j-unlogn">
+                                                                <span class="u-checkbox tabfocus u-checkbox-select">
+                                                                    <input id="un-login" type="checkbox" name="un-login" class="un-login">
+                                                                </span>
+                                                                <label for="un-login">十天内免登录</label>
+                                                            </div>
+                                                            <a class="forgetpwd j-redirect" data-outlink="1" href="//reg.163.com/resetpwd/index.do" target="_blank">忘记密码？</a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contr">
+                            <div class="others">
+                                <span class="sepln"></span>
+                                <span class="septxt">或</span>
+                                <ul class="w-user w-user-3" id="otherLogin2">
+                                    <li class="w1 tel">
+                                        <a class="w-btn3 w-btn3-01">手机账号登录</a>
+                                    </li>
+                                    <li class="w1 sina">
+                                        <a class="w-btn3 w-btn3-02" href="#">新浪微博登录</a>
+                                    </li>
+                                    <li class="w1 qq">
+                                        <a class="w-btn3 w-btn3-03" href="#">腾讯QQ登录</a>
+                                    </li>
+                                    <li class="w1 weixin">
+                                        <a class="w-btn3 w-btn3-04" href="#">微信登录</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

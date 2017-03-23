@@ -1,0 +1,504 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, button, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
+}
+fieldset, img, html, body, iframe {
+    border: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-size: 100%;
+}
+body, textarea, select, input, button {
+    font-family: "Hiragino Sans GB","Microsoft YaHei","微软雅黑",tahoma,arial,simsun,"宋体";
+}
+a{
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}
+input {
+    background: #fff;
+    width: 225px;
+    height: 42px;
+    padding-left: 0;
+    color: #333;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 42px;
+}
+.g-bdc,.f-cb{
+    zoom: 1;
+}
+body{
+    background: none;
+    min-width: 960px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    color: #444;
+}
+.g-bgfull12{
+    position: relative;
+    zoom: 1;
+    text-align: left;
+}
+.m-logbg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.m-logbg img{
+    display: block;
+    width: 1349px;
+    height: auto;
+    margin-left: 0px;
+    margin-top: -184.488px;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+}
+.m-stwrap1{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 40%;
+    margin: -150px auto 0;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+.m-stwrap1 .logo{
+    width: 337px;
+    margin: 0 auto 60px;
+}
+.m-stwrap1 .logo .f1{
+    width: 337px;
+    height: 124px;
+    text-align: -9999px;
+    background: url(../images/btns.png) no-repeat -3px -3px;
+}
+.m-stwrap1 .logo .f2{
+    display: none;
+}
+.m-region{
+    width: 584px;
+    margin: 0 auto;
+}
+.m-userlnks a{
+    float: left;
+    width: 194px;
+    height: 56px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 4px;
+    line-height: 56px;
+    background-color: rgba(17,17,17,0.5);
+    color: rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(17,17,17,0.3)
+}
+.w-regsong .regtxt{
+    width: 84px;
+    float: left;
+    margin-right: 8px;
+    text-align: right;
+}
+.w-regsong .acttxt{
+    position: relative;
+    zoom: 1;
+    float: right;
+    width: 102px;
+    height: 36px;
+    padding: 10px 0;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-align: left;
+}
+.w-regsong .acttxt .sep{
+    float: left;
+    width: 10px;
+    height: 28px;
+    margin-top: 4px;
+    border-left: 1px solid #fff;
+    opacity: 0.2;
+}
+.w-regsong .acttxt span {
+    float: left;
+    width: 56px;
+}
+.w-regsong .acttxt span b {
+    float: left;
+    font-weight: normal;
+}
+.w-regsong .acttxt .w-song {
+    position: absolute;
+    top: 15px;
+    right: 8px;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+.w-song {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("../images/btns.png") no-repeat -474px -824px;
+}
+.m-userlnks .crt, .m-userlnks .crt:hover {
+    color: #444;
+    background: #fff;
+    border-color: #fff;
+}
+.m-userlnks a{
+    float: left;
+    width: 194px;
+    height: 56px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 4px;
+    line-height: 56px;
+    border-right: 1px solid rgba(17,17,17,0.3);
+}
+.m-userlnks .dwdapp {
+    border: 0;
+    letter-spacing: 0;
+}
+.f-cb:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+.m-forms {
+    position: relative;
+    zoom: 1;
+    background: #fff;
+    padding: 30px;
+    color: #888;
+}
+.m-reg .contl, .m-login .contl {
+    float: left;
+    width: 306px;
+}
+.login-URS-wrap {
+    position: relative;
+}
+.login-URS-wrap .retrieve-ac {
+    position: absolute;
+    right: 3px;
+    bottom: 1px;
+}
+.login-URS-wrap .retrieve-ac span{
+    margin: 0 10px;
+}
+.login-URS-wrap .retrieve-ac a, .login-URS-wrap .retrieve-ac a:hover {
+    color: #777;
+}
+.reg-URS-iframe, .login-URS-iframe {
+    width: 306px;
+    height: 200px;
+    min-width: 304px;
+}
+.g-bd {
+    position: relative;
+    width: auto;
+    padding: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #fff;
+}
+#account-box {
+    margin-bottom: -1px;
+}
+.m-cnt .inputbox {
+    position: relative;
+    z-index: 19;
+    width: 266px;
+    height: 22px;
+    line-height: 22px;
+    padding: 8px 16px;
+    border-color: #d7d7d7;
+    border: 1px solid #c5cddb;
+    background: #fff;
+    font-size: 12px;
+}
+.m-cnt .u-input {
+    position: relative;
+    float: none;
+    height: 100%;
+}
+.m-cnt .u-input input {
+    display: block;
+    position: absolute;
+    width: 266px;
+    height: 22px;
+    line-height: 22px;
+    padding: 0;
+    color: #444;
+    font-size: 14px;
+    font-weight: 400;
+}
+.m-cnt #login-form .m-container .m-ckcnt {
+    zoom: 1;
+    position: relative;
+    z-index: 19;
+    margin-top: 12px;
+    font-size: 0;
+}
+.ncpt_widget {
+    position: relative;
+    display: inline-block;
+    width: 265px;
+    height: 28.1563px;
+    margin-top: 0px;
+    touch-action: none;
+}
+.ncpt_widget .ncpt_contents {
+    position: absolute;
+    bottom: 0;
+    z-index: 90;
+    left: 0;
+}
+.ncpt_widget .ncpt_puzzle_bg {
+    position: absolute;
+    bottom: 36.4375px;
+    height: 82.8125px;
+    display: none;
+    z-index: 999;
+}
+.ncpt_widget .ncpt_puzzle_fg {
+    position: absolute;
+    top: 0;
+    left: 5.96875px;
+    z-index: 1005;
+}
+.ncpt_widget .ncpt_puzzle_fg img{
+    width: 49.6875px;
+    height: auto;
+}
+.ncpt_widget .ncpt_puzzle_bg {
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.ncpt_widget .ncpt_puzzle_bg img{
+    width: 265px;
+    border-radius: 8px;
+}
+.ncpt_widget .ncpt_slide_bg {
+    position: relative;
+    width: 265px;
+    height: 26.5px;
+    border-radius: 13.25px;
+    border: 1px solid #cbcbcb;
+    padding: 0 0;
+    text-align: center;
+    background: #F9F9F9;
+    margin: 0 auto;
+}
+.ncpt_widget .ncpt_slide_bg .ncpt_slide_fg {
+    cursor: pointer;
+    position: absolute;
+    left: 1px;
+    z-index: 2;
+}
+.ncpt_widget .ncpt_slide_bg .ncpt_slide_fg img{
+    height: auto;
+    width: 59.625px;
+}
+.ncpt_widget .ncpt_hint_txt {
+    overflow: hidden;
+    color: #a8a8a8;
+    font-size: 12px;
+    text-align: center;
+    line-height: 28.1563px;
+    left: 29.8125px;
+    position: relative;
+    opacity: 1;
+}
+.ncpt_widget .ncpt_txt_status {
+    width: 100px;
+    height: 28.1563px;
+    margin-left: 277px;
+    line-height: 28.1563px;
+    text-align: left;
+    color: #fa5b5b;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    top: 0;
+    font-size: 12px;
+    padding-left: 20px;
+    display: none;
+}
+.m-cnt .m-nerror {
+    top: -31px;
+    left: -1px;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 0;
+    margin-bottom: 0px;
+    margin-top: 16px;
+    display: none;
+}
+.m-cnt .m-nerror .ferrortail{
+    display: inline-block;
+    overflow: hidden;
+    height: 15px;
+    width: 18px;
+    background: url("../images/btns.png") no-repeat -217px -34px;
+}
+.m-cnt .m-nerror .ferrorhead{
+    display: inline-block;
+    overflow: hidden;
+    width: 282px;
+    margin-top: -3px;
+    color: #fa5b5b;
+    font-size: 12px;
+    line-height: 20px;
+    vertical-align: top;
+    word-break: break-all;
+}
+
+.m-cnt .loginbox {
+    margin: 12px 0 0 0;
+}
+.loginbox .u-loginbtn {
+    display: block;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background: url("../images/btns.png") no-repeat -1px -461px;
+}
+.f-cb:after{
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    content: ".";
+}
+.m-cnt .m-unlogin {
+    font-size: 0;
+    height: 16px;
+    line-height: 16px;
+    padding: 0 75px 0 0;
+    margin-top: 10px;
+}
+.m-cnt .m-unlogin .b-unlogn {
+    display: block;
+    width: 104px;
+    float: left;
+    margin-right: 8px;
+    border: none;
+}
+.m-cnt .m-unlogin .b-unlogn .u-checkbox {
+    display: block;
+    float: left;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    border: solid 1px #aaa;
+    color: #999;
+    font-size: 12px;
+    background: url("../images/btns.png") no-repeat -330px -92px;
+}
+.m-cnt .m-unlogin label, .m-cnt .m-unlogin input {
+    cursor: pointer;
+}
+.m-cnt .un-login {
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    opacity: 0;
+}
+.m-cnt .m-unlogin .b-unlogn label {
+    color: #777;
+    display: block;
+    float: left;
+    height: 16px;
+    padding-left: 8px;
+    font-size: 12px;
+    line-height: 17px;
+    cursor: pointer;
+}
+.m-cnt .m-unlogin .forgetpwd {
+    float: right;
+    color: #777;
+    height: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.m-reg .contr, .m-login .contr {
+    float: right;
+    width: 162px;
+}
+.m-reg .others, .m-login .others {
+    position: relative;
+    zoom: 1;
+}
+.m-reg .sepln, .m-login .sepln {
+    position: absolute;
+    left: -30px;
+    top: 0;
+    display: block;
+    height: 190px;
+    width: 1px;
+    background: #e7e7e7;
+}
+.m-reg .septxt, .m-login .septxt {
+    position: absolute;
+    left: -30px;
+    top: 70px;
+    margin: 0 0 0 -6px;
+    display: block;
+    width: 20px;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    color: #aaa;
+}
+.w-user-3 .w-btn3 {
+    display: inline-block;
+    width: 107px;
+    height: 40px;
+    border-radius: 2px;
+    margin: 0 0 10px;
+    padding: 0 0 0 54px;
+    text-align: left;
+    color: #fff;
+    font-size: 14px;
+    line-height: 40px;
+}
+.w-btn3-01{
+    background: url("../images/btns.png") no-repeat -19px -90px;
+}
+.w-btn3-02{
+    background: url("../images/btns.png") no-repeat -1px -601px;
+}
+.w-btn3-03{
+    background: url("../images/btns.png") no-repeat -1px -651px;
+}
+.w-btn3-04{
+    background: url("../images/btns.png") no-repeat -213px -1191px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>促销秒杀</title>
+    <style>
+        body{
+            font-size: 16px;
+            width: 25%;
+            min-width: 450px;
+            margin: 30px auto;
+        }
+        h1{
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>每周三秒杀倒计时</h1>
+<ul id="timeList"></ul>
+
+<script>
+    let timeUl = document.getElementById("timeList");
+    let timeLi = [];
+    let promotionTime = [];
+
+    function timeArr(year, month, day){
+        let timeList = [];
+        let daysOfMonth = new Date(year,month,0).getDate();
+        let dateOfMonth = [];
+        let dayOfDate = [];
+        for(let i = 1; i<=daysOfMonth; i++){
+            dateOfMonth.push(year + "/" + month + "/" + i);
+            dayOfDate.push(new Date(dateOfMonth[i-1]).getDay());
+        }
+        for(let i = 0; i<daysOfMonth; i++){
+            if(dayOfDate[i]===day){
+                let timeNow = new Date();
+                let timeThen = new Date(dateOfMonth[i]);
+                let daysApart = Math.floor((timeNow - timeThen.getTime())/(1000*60*60*24));
+                timeList.push({date:dateOfMonth[i],daysBefore:daysApart});
+            }
+        }
+        return timeList;
+    }
+
+    promotionTime = timeArr(2017,3,4);
+
+    for(let i = 0; i<promotionTime.length; i++){
+        if(promotionTime[i].daysBefore>0){
+            timeLi[i] = "日期："+promotionTime[i].date+"&nbsp;&nbsp;活动"+promotionTime[i].daysBefore+"天前已结束，请关注下期秒杀。"
+        }
+        else if(promotionTime[i].daysBefore<0){
+            timeLi[i] = "日期："+promotionTime[i].date+"&nbsp;&nbsp;活动"+(-promotionTime[i].daysBefore)+"天后开始，请密切关注！"
+        }
+        else {
+            timeLi[i] = "日期："+promotionTime[i].date+"&nbsp;&nbsp;活动正在进行，还不快行动！"
+        }
+    }
+
+     for(let i = 0; i<timeLi.length; i++){
+         let li = document.createElement("li");
+         li.innerHTML = timeLi[i];
+         timeUl.appendChild(li);
+     }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组去重</title>
+    <style>
+        body{
+            font-size: 16px;
+            width: 20%;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+<input id="hobbies" type="text" value="" placeholder="请输入您的兴趣爱好">
+<button id="btn" type="button">确认</button>
+<p>您的兴趣爱好是：<strong id="result"></strong></p>
+
+
+<script>
+    let makeSure = document.getElementById("btn");
+    let result = document.getElementById("result");
+    makeSure.onclick = function(){
+        let inputStr = document.getElementById("hobbies").value;
+        let strArr = inputStr.replace(/，/g,",");
+        strArr = strArr.split(",");
+        let newArr = [];
+        for(let i = 0; i < strArr.length; i++){
+            if(newArr.indexOf(strArr[i]) === -1 && strArr[i]!=""){
+                newArr.push(strArr[i]);
+            }
+        }
+        result.innerHTML = newArr.join(",");
+    }
+
+</script>
+
+</body>
+</html>

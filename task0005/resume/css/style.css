@@ -429,7 +429,6 @@
     }
     .mainBox{
         width: 100%;
-        min-width: 250px;
         overflow: auto;
         box-sizing: border-box;
         padding: 5px;
@@ -456,7 +455,7 @@
         width: 80%;
     }
     .leftBox article section.generalInfo p,.bottomBox article section.skills p,.bottomBox article section.hobbies p{
-        width: 180px;
+        width: 190px;
         margin: 0 auto;
         padding: 5px 0 12px;
     }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物卡密码处理</title>
+    <style>
+        body{
+            font-size: 16px;
+            width: 20%;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <input id="password" type="text" value="" placeholder="请输入您的密码">
+    <button id="btn" type="button">确认</button>
+    <p>您输入的密码为：<strong id="result"></strong></p>
+
+<script>
+    let makeSure = document.getElementById("btn");
+    let result = document.getElementById("result");
+    makeSure.onclick = function(){
+        let inputStr = document.getElementById("password").value;
+        inputStr = inputStr.replace(/-/g,"");
+        inputStr = inputStr.toLocaleUpperCase();
+        if(inputStr.length==20){
+            result.innerHTML = inputStr;
+            result.style.color = "black";
+        }
+        else{
+            result.innerHTML = "无效的密码格式";
+            result.style.color = "red";
+        }
+    }
+</script>
+
+
+</body>
+</html>
